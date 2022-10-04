@@ -8,9 +8,7 @@ class Solution {
             lsf=prices[i];
         }
         pro =prices[i]-lsf;
-        if(max<pro){
-            max=pro;
-        }
+        max= Math.max(pro,max);
     }
     return max;
     }
